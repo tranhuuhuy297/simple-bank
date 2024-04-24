@@ -6,5 +6,5 @@ migrate-down:
 	migrate -path db/migration -database "$(DB_URL)" -verbose down
 run-test:
 	go test -v ./...
-run-server:
+server:
 	go run main.go
